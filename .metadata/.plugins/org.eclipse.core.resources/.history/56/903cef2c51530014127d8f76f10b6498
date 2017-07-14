@@ -1,0 +1,21 @@
+//-------------------------------------------------------------
+// Author: Shyaan Khan    Period: 4 		Date: 	
+// Description:
+//-----------------------------------------------------------
+
+
+public class Num1 {
+	public static void main(String []args){
+		
+		for(int x = 9; x>0; x = x-2)
+		{
+			for(int y=1; y<=x; y=y++)
+			{
+				System.out.print(x-y);
+		} 
+			System.out.println();
+		}
+
+	}
+
+}

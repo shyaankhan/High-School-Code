@@ -1,0 +1,68 @@
+import java.awt.*;
+
+import javax.swing.*;
+
+
+
+/*HalloweenGUI.Java
+ *Sean Yap
+ *MVHS
+ *Per 6
+ *10/21/11 */
+
+public class HalloweenGUI extends JApplet
+{
+	
+	
+	public void paint (Graphics Page)
+	{
+		
+		resize(500, 500);
+		
+		setBackground(Color.black);
+		
+		//makes the ghost
+		Page.setColor(Color.white);
+		Page.fillOval(200,150, 100, 100);
+		Page.fillRect(200, 200,100,100);
+		
+		//makes eyes for ghost
+		Page.setColor(Color.red);
+		Page.fillOval(220,200,20,20);
+		Page.fillOval(260,200,20,20);
+		
+		//Make triangles for jagged edges at the bottom
+		Page.setColor(Color.black);
+		for (int i = 0; i <=100; i+=20)
+		Page.fillPolygon(getXCords(200 + i), getYCords(300), 3);
+		
+		//smile
+		Page.drawArc(220,240,60,20,180, 180);
+		
+		//makes text
+		Page.setColor(Color.orange);
+		Font font = new Font("Arial", Font.BOLD, 70 );
+		Page.setFont(font);
+		Page.drawString("Happy", 140, 90);
+		Page.drawString("Halloween!",70, 400);
+		
+		Page.setColor(Color.white);
+		font = new Font("Arial", Font.BOLD, 16);
+		Page.setFont(font);
+		Page.drawString("By Sean Yap", 395, 490);
+		
+		
+	}
+	//makes array for the x coordinates of the triangles
+	public int[] getXCords(int xStart)
+		{
+			int triangleX[] = {xStart,xStart + 10,xStart + 20};
+			return triangleX;
+		}
+	//makes array for the y coordinates of the triangles
+	public int[] getYCords(int yStart)
+	{	
+		int triangleY[] = {yStart,yStart + -15,yStart};
+		return triangleY;
+	}
+}

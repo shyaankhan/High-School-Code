@@ -1,0 +1,24 @@
+//-------------------------------------------------------------
+// Author: Shyaan Khan    Period: 4 		Date: 	
+// Description:
+//-----------------------------------------------------------
+
+
+public class Num1 {
+	public static void main(String []args){
+		
+		int endingInt = 50;
+		int startingInt = 1;
+		int sum = 0;
+		
+	
+		for(int num = 1; num <=endingInt; num++)
+		{
+			int prevNum = num;
+			sum = prevNum + sum;
+			
+		}
+		System.out.print(sum);
+	}
+
+}

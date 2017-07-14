@@ -1,0 +1,23 @@
+//-------------------------------------------------------------
+// Author: Shyaan Khan    Period: 4 		Date: 	
+// Description:
+//-----------------------------------------------------------
+
+/**
+ * @author mv.skhan
+ *
+ */
+public class MiniLab2 {
+	public static void main(String [] args)
+	{
+		int value;
+		int sum;
+		for(int x = 0; x< 100; x++)
+		{
+			value = (int) (Math.random()*20) +10;
+			
+		}
+		
+	}
+
+}

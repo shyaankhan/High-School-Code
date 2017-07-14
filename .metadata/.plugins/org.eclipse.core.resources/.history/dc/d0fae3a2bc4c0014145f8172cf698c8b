@@ -1,0 +1,36 @@
+//-------------------------------------------------------------
+// Author: Shyaan Khan    Period: 4 		Date: 	10.2.14
+// Description: requests a description of the item, the year of purchase, the cost of the item, the number of years to be depreciated  and the method of depreciation. Displays a depreciation schedule for the item similar to the schedule shown below
+//-----------------------------------------------------------
+import javax.swing.JOptionPane;
+public class Number6 {
+	
+	public static void main(String[]args){
+		String method;
+		method = JOptionPane.showInputDialog(null, "Please enter method of deprecation (straight line or double-declining)");
+		
+		String product;
+		product = JOptionPane.showInputDialog (null, "Please enter description of product");
+		
+		String year;
+		year = JOptionPane.showInputDialog (null, "Please enter year of product");
+		
+		String cost;
+		cost = JOptionPane.showInputDialog (null, "Please enter cost of product");
+		
+		String estimatedlife;
+		estimatedlife = JOptionPane.showInputDialog(null, "Please enter years to be depreciated (estimated life)");
+		
+		JOptionPane.showMessageDialog(null, "Description: "+product+"\nYear of purchase: "+year+"\nCost of purchase: "+cost+"\nEstimated Life: "+estimatedlife+" years"+"\nMethod of Depreciation: "+method);
+		
+		while (method.equalsIgnoreCase("straight line"))
+		{
+			
+		}
+		
+		
+		
+
+	
+	}
+}

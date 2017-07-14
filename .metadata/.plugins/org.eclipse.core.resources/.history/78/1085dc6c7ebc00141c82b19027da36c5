@@ -1,0 +1,17 @@
+//-------------------------------------------------------------
+// Author: Shyaan Khan    Period: 4 		Date: 	
+// Description:
+//-----------------------------------------------------------
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader; 
+
+public class RandomProgram {
+	public static void main(String [] args) throws FileNotFoundException
+	{
+		BufferedReader br = new BufferedReader(new FileReader("src\\StudentList.txt"));
+		
+		
+	}
+
+}
